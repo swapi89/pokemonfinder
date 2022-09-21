@@ -14,7 +14,9 @@ function PokemonFinder() {
 
   const searchButtonClick = () => {
     axios
-      .get(`https://pokeapi.co/api/v2/pokemon/${searchValue}`)
+      .get(
+        `https://pokeapi.co/api/v2/pokemon/${searchValue.toLowerCase().trim()}`
+      )
       .then((response) => {
         if (response.status === 200) {
           setError("");
