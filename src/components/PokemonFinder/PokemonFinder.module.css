@@ -1,0 +1,10 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchButton {
+    margin-left: 10px;
+}
