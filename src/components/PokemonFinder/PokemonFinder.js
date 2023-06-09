@@ -2,6 +2,9 @@ import { useState } from "react";
 import axios from "axios";
 import PokemonData from "../PokemonData/PokemonData";
 import styles from "./PokemonFinder.module.css";
+import Head from "next/head";
+import { useRouter } from "next/router";
+import SocialShare from "../SocialShare/SocialShare";
 
 function PokemonFinder() {
   const [searchValue, setSearchValue] = useState("");
@@ -27,25 +30,44 @@ function PokemonFinder() {
         if (error.response.status === 404) setError(error.response.data);
       });
   };
+  const router = useRouter();
 
   return (
-    <div className={styles.app}>
-      <h1>Pokemon Finder</h1>
-      <div>
-        <input
-          type="search"
-          id="pokemon-search"
-          name="pokemon-search"
-          placeholder="Search For Pokemon"
-          value={searchValue}
-          onChange={searchChangeHandler}
+    <>
+      <Head>
+        <title>Pokemon Finder</title>
+        <meta name="description" content="This is Pokemon Finder" />
+        <meta name="keywords" content="pokemon, bulbasaur" />
+        <meta name="og:title" content="Pokemon Finder" />
+        <meta name="og:description" content="This is Pokemon Finder" />
+        <meta
+          name="og:url"
+          content={
+            typeof window !== "undefined" ? window.location.href : router.asPath
+          }
         />
-        <button onClick={searchButtonClick} className={styles.searchButton}>
-          Search
-        </button>
+        <meta name="og:image" content="/images/channels4_profile.jpg" />
+        channels4_profile.jpg
+      </Head>
+      <div className={styles.app}>
+        <h1>Pokemon Finder</h1>
+        <div>
+          <input
+            type="search"
+            id="pokemon-search"
+            name="pokemon-search"
+            placeholder="Search For Pokemon"
+            value={searchValue}
+            onChange={searchChangeHandler}
+          />
+          <button onClick={searchButtonClick} className={styles.searchButton}>
+            Search
+          </button>
+        </div>
+        <PokemonData data={data} error={error} />
+        <SocialShare />
       </div>
-      <PokemonData data={data} error={error} />
-    </div>
+    </>
   );
 }
 
