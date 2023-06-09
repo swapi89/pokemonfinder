@@ -36,7 +36,7 @@ function PokemonFinder() {
     <>
       <Head>
         <title>Pokemon Finder</title>
-        <meta name="description" content="This is Pokemon Finder" />
+        {/*<meta name="description" content="This is Pokemon Finder" />
         <meta name="keywords" content="pokemon, bulbasaur" />
         <meta name="og:title" content="Pokemon Finder" />
         <meta name="og:description" content="This is Pokemon Finder" />
@@ -46,7 +46,7 @@ function PokemonFinder() {
             typeof window !== "undefined" ? window.location.href : router.asPath
           }
         />
-        <meta name="og:image" content="/images/channels4_profile.jpg" />
+        <meta name="og:image" content="/images/channels4_profile.jpg" />*/}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Pokemon Finder" />
         <meta
