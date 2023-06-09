@@ -36,6 +36,7 @@ function PokemonFinder() {
     <>
       <Head>
         <title>Pokemon Finder</title>
+        <meta name="keywords" content="pokemon, bulbasaur" />
         {/*<meta name="description" content="This is Pokemon Finder" />
         <meta name="keywords" content="pokemon, bulbasaur" />
         <meta name="og:title" content="Pokemon Finder" />
