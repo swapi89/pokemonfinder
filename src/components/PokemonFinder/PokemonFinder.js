@@ -59,10 +59,10 @@ function PokemonFinder() {
         />
         <meta property="og:title" content="Pokemon Finder" />
         <meta property="og:description" content="This is Pokemon Finder" />
-        <meta
+        {/*<meta
           property="og:image"
           content="https://pokemonfinder-nu.vercel.app/images/channels4_profile.jpg"
-        />
+        />*/}
       </Head>
       <div className={styles.app}>
         <h1>Pokemon Finder</h1>
