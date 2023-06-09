@@ -56,7 +56,7 @@ function PokemonFinder() {
           }
         />
         <meta name="twitter:site" content="@pokemonfinder" />
-        {/*<meta name="twitter:image" content="/images/channels4_profile.jpg" />*/}
+        <meta name="twitter:image" content="/images/channels4_profile.jpg" />
         <meta property="twitter:description" content="This is Pokemon Finder" />
       </Head>
       <div className={styles.app}>
