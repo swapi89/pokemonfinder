@@ -61,7 +61,7 @@ function PokemonFinder() {
         <meta property="og:description" content="This is Pokemon Finder" />
         <meta
           property="og:image"
-          content="https://cdn.finshots.app/images/2023/06/design-81-india.jpg"
+          content="https://pokemonfinder-nu.vercel.app/images/channels4_profile.jpg"
         />
       </Head>
       <div className={styles.app}>
