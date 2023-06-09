@@ -48,19 +48,19 @@ function PokemonFinder() {
         />
         <meta name="og:image" content="/images/channels4_profile.jpg" />*/}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Pokemon Finder" />
+        <meta name="twitter:site" content="@pokemonfinder" />
         <meta
-          name="twitter:url"
+          property="og:url"
           content={
             typeof window !== "undefined" ? window.location.href : router.asPath
           }
         />
-        <meta name="twitter:site" content="@pokemonfinder" />
+        <meta property="og:title" content="Pokemon Finder" />
+        <meta property="og:description" content="This is Pokemon Finder" />
         <meta
-          name="twitter:image"
+          property="og:image"
           content="https://cdn.finshots.app/images/2023/06/design-81-india.jpg"
         />
-        <meta property="twitter:description" content="This is Pokemon Finder" />
       </Head>
       <div className={styles.app}>
         <h1>Pokemon Finder</h1>
