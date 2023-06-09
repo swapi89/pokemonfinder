@@ -47,7 +47,7 @@ function PokemonFinder() {
           }
         />
         <meta name="og:image" content="/images/channels4_profile.jpg" />*/}
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Pokemon Finder" />
         <meta
           name="twitter:url"
@@ -58,7 +58,7 @@ function PokemonFinder() {
         <meta name="twitter:site" content="@pokemonfinder" />
         <meta
           name="twitter:image"
-          content="https://pokemonfinder-nu.vercel.app/images/channels4_profile.jpg"
+          content="https://cdn.finshots.app/images/2023/06/design-81-india.jpg"
         />
         <meta property="twitter:description" content="This is Pokemon Finder" />
       </Head>
