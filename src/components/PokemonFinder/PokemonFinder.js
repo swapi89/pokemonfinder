@@ -50,7 +50,7 @@ function PokemonFinder() {
         <meta name="og:image" content="/images/channels4_profile.jpg" />*/}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Pokemon Finder" />
-
+        <meta name="twitter:site" content="@pokemonfinder"></meta>
         <meta
           property="og:url"
           content={
