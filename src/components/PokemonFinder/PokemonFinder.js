@@ -52,15 +52,15 @@ function PokemonFinder() {
         <meta name="twitter:title" content="Pokemon Finder" />
         <meta name="twitter:site" content="@pokemonfinder"></meta>
         <meta
-          property="og:url"
+          property="twitter:url"
           content={
             typeof window !== "undefined" ? window.location.href : router.asPath
           }
         />
-        <meta property="og:title" content="Pokemon Finder" />
-        <meta property="og:description" content="This is Pokemon Finder" />
+        {/*<meta property="og:title" content="Pokemon Finder" />*/}
+        <meta property="twitter:description" content="This is Pokemon Finder" />
         <meta
-          property="og:image"
+          property="twitter:image"
           content="https://pokemonfinder-nu.vercel.app/images/channels4_profile.jpg"
         />
       </Head>
