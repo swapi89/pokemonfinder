@@ -21,7 +21,7 @@ const SocialShare = () => {
       <WhatsappShareButton url={url}>
         <WhatsappIcon size={32} round />
       </WhatsappShareButton>
-      <TwitterShareButton url={url}>
+      <TwitterShareButton url={url} title="Pokemon Finder">
         <TwitterIcon size={32} round />
       </TwitterShareButton>
     </div>
